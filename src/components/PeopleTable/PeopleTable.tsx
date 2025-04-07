@@ -45,19 +45,15 @@ export const PeopleTable: React.FC<Props> = ({ people }) => {
             <td>
               {person.mother ? (
                 <PersonLink person={person.mother} />
-              ) : person.motherName ? (
-                person.motherName
               ) : (
-                '-'
+                person.motherName || '-'
               )}
             </td>
             <td>
               {person.father ? (
                 <PersonLink person={person.father} />
-              ) : person.fatherName ? (
-                person.fatherName
               ) : (
-                '-'
+                person.fatherName || '-'
               )}
             </td>
           </tr>
