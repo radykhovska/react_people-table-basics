@@ -13,6 +13,7 @@ export const App = () => {
   };
 
   return (
+    // buddy check my code
     <div data-cy="app">
       <nav
         data-cy="nav"
